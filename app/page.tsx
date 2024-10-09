@@ -7,27 +7,39 @@ export default function Home() {
   return (
     <main className="max-w-[1440px] m-auto">
       <div className="headerContainer relative max-w-[1100px] m-auto">
-        <div className="header absolute top-7 flex justify-between items-center">
-          <Image
-            src={"/coinfairLogo.png"}
-            alt="coinfairLogo"
-            width={120}
-            height={27}
-          />
+        <div className="header absolute top-7 flex justify-between items-center w-full">
+          <div className="z-20 sm:block">
+            <Image
+              src="/coinfairLogo.png"
+              alt="coinfairLogo"
+              width={120}
+              height={27}
+            />
+          </div>
         </div>
       </div>
       <div className="heroContainer w-full h-[500px] sm:h-[900px] relative overflow-hidden">
         <Image
-          src={"/Background.png"}
+          src="/Background.png"
           alt="backgroundImage"
           layout="fill"
           objectFit="cover"
           objectPosition="center top"
-          className="absolute top-0 left-0 w-full h-[500px] sm:h-[900px] z-[-10]"
+          className="absolute top-0 left-0 w-full h-[500px] sm:h-[900px] z-[-10] hidden sm:block"
         />
+        <div className="sm:hidden">
+          <Image
+            src="/CroppedBackground.png"
+            alt="Cropped Background"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center top"
+            className="absolute top-0 left-0 w-full h-[500px]"
+          />
+        </div>
 
-        <div className="title absolute top-1/4 sm:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center text-center">
-          <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] font-extrabold leading-tight sm:leading-tight md:leading-tight lg:leading-[80px] xl:leading-[80px] text-center whitespace-normal sm:whitespace-nowrap drop-shadow-[0_4px_8px_rgba(0,0,0,0.25)] gradient-text mb-4 sm:mb-[22px]">
+        <div className="title absolute top-40 sm:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center text-center">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] font-extrabold leading-tight sm:leading-tight md:leading-tight lg:leading-[80px] xl:leading-[80px] text-center whitespace-normal sm:whitespace-nowrap drop-shadow-[0_4px_8px_rgba(0,0,0,0.25)] gradient-text mb-4 sm:mb-[22px]">
             A new Generation DEX
           </h1>
           <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] font-extrabold leading-tight sm:leading-tight md:leading-tight lg:leading-[80px] xl:leading-[80px] text-center whitespace-normal sm:whitespace-nowrap drop-shadow-[0_4px_8px_rgba(0,0,0,0.25)] text-[color:var(--title-text-2)]">
