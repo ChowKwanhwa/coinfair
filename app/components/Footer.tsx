@@ -6,35 +6,52 @@ export default function Footer() {
     <footer className="bg-muted">
       {/* White divider */}
       <div className="h-px bg-white"></div>
-      
+
       <div className="py-6 md:py-8">
         <div className="container max-w-7xl flex items-center justify-between">
           <div className="flex flex-col items-start gap-2">
             <Link href="#" prefetch={false}>
-              <Image src='/coinfairLogo.png' alt="footerlogo" width={100} height={1000} />
-              <span className="sr-only">Acme Inc</span>
+              <Image
+                src="/coinfairLogo.png"
+                alt="footerlogo"
+                width={100}
+                height={1000}
+              />
+              <span className="sr-only">Coinfair</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               &copy; 2024 Coinfair All rights reserved.
             </p>
           </div>
           <div className="flex items-center gap-4">
-            <Link href="#" aria-label="X" prefetch={false}>
+            <Link href="https://x.com/CoinfairNetwork" aria-label="X" prefetch={false} target="_blank" rel="noopener noreferrer">
               <div className="border border-white p-2 rounded">
-                <Image src="/XIcon.svg" alt="X" width={20} height={20} className="text-muted-foreground hover:text-primary transition-colors" />
+                <Image
+                  src="/XIcon.svg"
+                  alt="X"
+                  width={20}
+                  height={20}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                />
               </div>
             </Link>
-            <Link href="#" aria-label="Telegram" prefetch={false}>
+            <Link href="https://t.me/CoinfairNetwork" aria-label="Telegram" prefetch={false} target="_blank" rel="noopener noreferrer">
               <div className="border border-white p-2 rounded">
                 <TelegramIcon className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
               </div>
             </Link>
             <Link href="#" aria-label="Flower" prefetch={false}>
               <div className="border border-white p-2 rounded">
-                <Image src="/FlowerIcon.svg" alt="Flower" width={20} height={20} className="text-muted-foreground hover:text-primary transition-colors" />
+                <Image
+                  src="/FlowerIcon.svg"
+                  alt="Flower"
+                  width={20}
+                  height={20}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                />
               </div>
             </Link>
-            <Link href="#" aria-label="AI Robot" prefetch={false}>
+            <Link href="https://t.me/coinfair_bot" aria-label="AI Robot" prefetch={false} target="_blank" rel="noopener noreferrer">
               <div className="border border-white p-2 rounded">
                 <BotIcon className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
               </div>
@@ -70,7 +87,6 @@ function BotIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-
 function TelegramIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -90,5 +106,3 @@ function TelegramIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-
-
