@@ -42,20 +42,20 @@ export default function CFCard({
       )}
       {...props}
     >
-      <CardHeader className="py-6 pl-6">
+      <CardHeader className="py-6 pl-6 text-center sm:text-left">
         <CardTitle className="text-[var(--card-title)]">{seedRound}</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-5 pt-[20px]">
-        <p className="text-sm text-[var(--card-text-2)] flex items-center">
-          <span className="text-[var(--card-text-1)] mr-5">Sale Token:</span>
+      <CardContent className="space-y-5 pt-[20px] flex flex-col items-center sm:items-start">
+        <p className="text-sm text-[var(--card-text-2)] flex flex-col sm:flex-row items-center sm:items-start">
+          <span className="text-[var(--card-text-1)] mb-2 sm:mb-0 sm:mr-5">Sale Token:</span>
           {saleToken}
         </p>
-        <p className="text-sm text-[var(--card-text-2)] flex items-center">
-          <span className="text-[var(--card-text-1)] mr-5">Hard Cap:</span>
+        <p className="text-sm text-[var(--card-text-2)] flex flex-col sm:flex-row items-center sm:items-start">
+          <span className="text-[var(--card-text-1)] mb-2 sm:mb-0 sm:mr-5">Hard Cap:</span>
           {hardCap}
         </p>
-        <p className="text-sm text-[var(--card-text-2)] flex items-center">
-          <span className="text-[var(--card-text-1)] mr-5">Start Sale:</span>
+        <p className="text-sm text-[var(--card-text-2)] flex flex-col sm:flex-row items-center sm:items-start">
+          <span className="text-[var(--card-text-1)] mb-2 sm:mb-0 sm:mr-5">Start Sale:</span>
           {startSale}
         </p>
       </CardContent>
