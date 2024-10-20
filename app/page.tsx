@@ -11,7 +11,7 @@ export default function Home() {
           <div className="z-20 sm:block">
             <Image
               src="/coinfairLogo.png"
-              alt="coinfairLogo"
+              alt="coinetLogo"
               width={120}
               height={27}
             />

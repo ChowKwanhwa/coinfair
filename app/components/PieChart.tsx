@@ -68,7 +68,7 @@
 //     <Card className="flex justify-between items-center border-none">
 //       <div className="leftContiner flex-col justify-start items-start">
 //         <CardHeader className="items-center pb-10 ">
-//           <CardTitle className="text-[var(--chart-title) text-5xl ]">COINFAIR</CardTitle>
+//           <CardTitle className="text-[var(--chart-title) text-5xl ]">COINET</CardTitle>
 //           <CardDescription className="text-[var(--chart-sub) text-3xl]">
 //             Machine made
 //           </CardDescription>

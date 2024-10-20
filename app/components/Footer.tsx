@@ -17,14 +17,14 @@ export default function Footer() {
                 width={100}
                 height={1000}
               />
-              <span className="sr-only">Coinfair</span>
+              <span className="sr-only">Coinet</span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              &copy; 2024 Coinfair All rights reserved.
+              &copy; 2024 Coinet All rights reserved.
             </p>
           </div>
           <div className="flex items-center gap-4">
-            <Link href="https://x.com/CoinfairNetwork" aria-label="X" prefetch={false} target="_blank" rel="noopener noreferrer">
+            <Link href="https://x.com/Coineton" aria-label="X" prefetch={false} target="_blank" rel="noopener noreferrer">
               <div className="border border-white p-2 rounded">
                 <Image
                   src="/XIcon.svg"
@@ -35,7 +35,7 @@ export default function Footer() {
                 />
               </div>
             </Link>
-            <Link href="https://t.me/CoinfairNetwork" aria-label="Telegram" prefetch={false} target="_blank" rel="noopener noreferrer">
+            <Link href="https://t.me/CoinetOfficial" aria-label="Telegram" prefetch={false} target="_blank" rel="noopener noreferrer">
               <div className="border border-white p-2 rounded">
                 <TelegramIcon className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
               </div>
