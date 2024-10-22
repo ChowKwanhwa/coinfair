@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="flex flex-col items-start gap-2">
             <Link href="#" prefetch={false}>
               <Image
-                src="/coinfairLogo.png"
+                src="/CoinetLogo.png"
                 alt="footerlogo"
                 width={100}
                 height={1000}
@@ -51,7 +51,7 @@ export default function Footer() {
                 />
               </div>
             </Link>
-            <Link href="https://t.me/coinfair_bot" aria-label="AI Robot" prefetch={false} target="_blank" rel="noopener noreferrer">
+            <Link href="https://t.me/Coineton_bot/" aria-label="AI Robot" prefetch={false} target="_blank" rel="noopener noreferrer">
               <div className="border border-white p-2 rounded">
                 <BotIcon className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
               </div>

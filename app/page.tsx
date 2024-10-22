@@ -10,7 +10,7 @@ export default function Home() {
         <div className="header absolute top-7 flex justify-between items-center w-full">
           <div className="z-20 sm:block">
             <Image
-              src="/coinfairLogo.png"
+              src="/CoinetLogo.png"
               alt="coinetLogo"
               width={120}
               height={27}
