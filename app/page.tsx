@@ -55,15 +55,15 @@ export default function Home() {
       <Marquee />
       <div className="cards flex flex-col max-w-[1100px] m-auto w-full gap-[50px] py-20 px-4 sm:px-0">
         <div className="firstTwo flex flex-col sm:flex-row justify-between items-center w-full gap-[50px]">
-          <CFCard className="w-full sm:w-1/2" progress={10} />
+          <CFCard className="w-full sm:w-1/2" progress={100} />
           <CFCard
             className="w-full sm:w-1/2"
             seedRound="Seed Round"
-            saleToken="500 million $Fair"
-            hardCap="5M $USDT"
-            startSale="Coming Soon"
+            saleToken="300 million $Fair"
+            hardCap="3M $USDT"
+            startSale="2024-10-08 18:00"
             border={false}
-            progress={0}
+            progress={100}
           />
         </div>
         <div className="buttonTwo flex flex-col sm:flex-row justify-between items-center w-full gap-[50px]">

@@ -1,7 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { cn } from "@/lib/utils"; // Make sure you have this utility function
+import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
 
 import {
   Card,
@@ -32,6 +33,12 @@ export default function CFCard({
   className,
   ...props
 }: Props) {
+  const [showProgress, setShowProgress] = useState(false);
+
+  useEffect(() => {
+    setShowProgress(true);
+  }, []);
+
   return (
     <Card 
       className={cn(
@@ -47,7 +54,7 @@ export default function CFCard({
       </CardHeader>
       <CardContent className="space-y-5 pt-[20px] flex flex-col items-center sm:items-start">
         <p className="text-sm text-[var(--card-text-2)] flex flex-col sm:flex-row items-center sm:items-start">
-          <span className="text-[var(--card-text-1)] mb-2 sm:mb-0 sm:mr-5">Sale Token:</span>
+          <span className="text-[var(--card-text-1)] mb-2 sm:mb-0 sm:mr-3">Sale Token:</span>
           {saleToken}
         </p>
         <p className="text-sm text-[var(--card-text-2)] flex flex-col sm:flex-row items-center sm:items-start">
@@ -60,14 +67,17 @@ export default function CFCard({
         </p>
       </CardContent>
       {progressBar && (
-        <CardFooter>
+        <CardFooter className="px-3">
           <div className="w-full space-y-2 pb-4">
             <div className="relative pt-1">
               <div className="overflow-hidden h-2 text-xs flex rounded bg-black">
                 <div
-                  style={{ width: `${progress}%` }}
+                  style={{ 
+                    width: showProgress ? `${progress}%` : '0%'
+                  }}
                   className="shadow-none flex flex-col text-center whitespace-nowrap
-                   text-white justify-center bg-[#FFE2FF] transition-all duration-500 ease-in-out"
+                   text-white justify-center bg-[#FFE2FF] transition-all duration-1000 ease-out
+                   origin-left transform-gpu"
                 ></div>
               </div>
             </div>
