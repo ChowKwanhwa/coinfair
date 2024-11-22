@@ -24,7 +24,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex items-center gap-4">
-            <Link href="https://x.com/Coineton" aria-label="X" prefetch={false} target="_blank" rel="noopener noreferrer">
+            <Link href="https://x.com/Coinet_fair" aria-label="X" prefetch={false} target="_blank" rel="noopener noreferrer">
               <div className="border border-white p-2 rounded">
                 <Image
                   src="/XIcon.svg"
